@@ -106,12 +106,19 @@ address {
 
 /*=============Header========*/
 
+.header-flex {
+  display: flex;
+}
+
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
 }
 
 .header-nav {
+  display: flex;
+  gap: 76px;
+  flex-grow: 1;
 }
 
 .header-nav span {
@@ -119,6 +126,8 @@ address {
 }
 
 .header-nav-list {
+  display: flex;
+  gap: 40px;
 }
 
 .header-nav-item {
@@ -144,6 +153,8 @@ address {
 }
 
 .header-address-list {
+  display: flex;
+  gap: 40px;
 }
 
 .header-adress-item {
@@ -185,7 +196,11 @@ address {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
-  background-color: #4d5ae5;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #4d5ae5;
+  border-radius: 4px;
+  padding: 16px 32px;
+  border-color: transparent;
 }
 
 .hero-btn:hover,
@@ -200,6 +215,8 @@ address {
 }
 
 .feature-list {
+  display: flex;
+  gap: 24px;
 }
 
 .feature-item {
