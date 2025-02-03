@@ -65,6 +65,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 
 .subtitle {
@@ -109,15 +110,29 @@ img {
   letter-spacing: 0.02em;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /*=============Header========*/
 
 .header-flex {
   display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -125,6 +140,7 @@ img {
   display: flex;
   gap: 76px;
   flex-grow: 1;
+  align-items: center;
 }
 
 .header-nav span {
@@ -181,7 +197,7 @@ img {
 .hero {
   background: #2e2f42;
   color: #fff;
-  text-align: center;
+  /*text-align: center;*/
   padding-top: 188px;
   padding-bottom: 188px;
 }
@@ -192,11 +208,14 @@ img {
   line-height: 1.07;
   letter-spacing: 0.02em;
   max-width: 496px;
-  margin: auto;
+  /*margin: auto;*/
   padding-bottom: 48px;
 }
 
 .hero-btn {
+  display: block;
+  min-width: 169px;
+  height: 56px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -205,8 +224,8 @@ img {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
   border-radius: 4px;
-  padding: 16px 32px;
-  border-color: transparent;
+  /*padding: 16px 32px;*/
+  border: none;
 }
 
 .hero-btn:hover,
@@ -218,6 +237,7 @@ img {
 /*===========Feature=========*/
 
 .feature {
+  padding: 120px 0;
 }
 
 .feature-list {
@@ -235,6 +255,7 @@ img {
 
 .team {
   background: #f4f4fd;
+  padding: 120px 0;
 }
 
 .team-list {
@@ -258,16 +279,27 @@ img {
   text-align: center;
 }
 
+.peolple {
+  padding: 32px 0;
+}
+
+.peolple .subtitle {
+  margin-bottom: 8px;
+}
+
 /*===========================*/
 
 /*=========Portfolio=========*/
 .portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  row-gap: 48px;
 }
 
 .portfolio-items {
@@ -278,7 +310,8 @@ img {
 }
 
 .portfolio-descr {
-  padding-left: 16px;
+  /*padding-left: 16px;*/
+  padding: 32px 16px;
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
@@ -288,12 +321,21 @@ img {
 /*============Footer=========*/
 .footer {
   background: #2e2f42;
+  padding: 100px 0;
 }
 
 .footer .container {
   margin-left: 156px;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  /*padding-top: 100px;
+  padding-bottom: 100px;*/
+}
+
+.footer .logo {
+  display: inline-block;
+}
+
+.footer a {
+  margin-bottom: 16px;
 }
 
 .footer span {
