@@ -130,7 +130,8 @@ img {
 
 .header-flex {
   display: flex;
-  padding: 24px 0; /*
+  padding: 0 15px;
+  /*
   padding-top: 24px;
   padding-bottom: 24px;*/
 }
