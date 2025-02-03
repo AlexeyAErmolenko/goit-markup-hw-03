@@ -109,6 +109,7 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0;
 }
 
 .visually-hidden {
@@ -155,6 +156,7 @@ img {
 }
 
 .header-nav-item {
+  padding: 24px 0;
 }
 
 .header-nav .link {
