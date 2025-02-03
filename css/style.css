@@ -40,11 +40,16 @@ address {
   font-style: normal;
 }
 
+img {
+  display: block;
+}
+
 .container {
   max-width: 1158px;
-  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main .container {
@@ -113,6 +118,7 @@ address {
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .header-nav {
@@ -186,7 +192,7 @@ address {
   line-height: 1.07;
   letter-spacing: 0.02em;
   max-width: 496px;
-  margin: 0 auto;
+  margin: auto;
   padding-bottom: 48px;
 }
 
@@ -220,6 +226,7 @@ address {
 }
 
 .feature-item {
+  width: calc((100% - 3 * 24px) / 4);
 }
 
 /*===========================*/
@@ -231,10 +238,16 @@ address {
 }
 
 .team-list {
+  display: flex;
+  gap: 24px;
 }
 
 .team-item {
   background-color: #ffffff;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  width: calc((100% - 3 * 24px) / 4);
 }
 
 .team-img {
@@ -252,14 +265,24 @@ address {
 }
 
 .portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
 .portfolio-items {
+  width: calc((100% - 2 * 24px) / 3);
 }
 
 .portfolio-img {
 }
 
+.portfolio-descr {
+  padding-left: 16px;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+}
 /*===========================*/
 
 /*============Footer=========*/
