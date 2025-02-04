@@ -33,7 +33,7 @@ ul {
 }
 
 button {
-  cursor: pointer;
+  cursor: pointer; /*hw04*/
 }
 
 address {
@@ -41,22 +41,21 @@ address {
 }
 
 img {
-  display: block;
+  display: block; /*hw04*/
 }
 
 .container {
   max-width: 1158px;
-  /*padding-left: 15px;
-  padding-right: 15px;*/
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 15px;
+  margin: 0 auto;
+  padding: 0 15px; /*hw04*/
 }
 
-.main .container {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
+/*
+  .main .container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+*/
 
 .logo {
   font-family: "Raleway", sans-serif;
@@ -66,7 +65,18 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  margin-right: 76px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  text-transform: capitalize;
+
+  margin-bottom: 72px;
 }
 
 .subtitle {
@@ -94,57 +104,40 @@ img {
   padding-bottom: 32px;
 }
 
-.title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #2e2f42;
-  text-transform: capitalize;
-  margin-bottom: 72px;
-}
-
 .link {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+
   padding: 24px 0;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 /*=============Header========*/
 
+.header {
+  border-bottom: 1px solid #e7e9fc; /*hw04*/
+}
+
 .header-flex {
-  display: flex;
+  display: flex; /*hw04*/
+
   padding: 0 15px;
   /*
   padding-top: 24px;
   padding-bottom: 24px;*/
 }
 
-.header {
-  border-bottom: 1px solid #e7e9fc;
-}
-
 .header-nav {
-  display: flex;
+  display: flex; /*hw04*/
+
   gap: 76px;
   flex-grow: 1;
-  align-items: center;
+
+  align-items: center; /*hw04*/
+}
+
+.header-nav .logo {
+  margin-right: 76px; /*hw04*/
 }
 
 .header-nav span {
@@ -153,11 +146,11 @@ img {
 
 .header-nav-list {
   display: flex;
-  gap: 40px;
+  gap: 40px; /*hw04*/
 }
 
 .header-nav-item {
-  padding: 24px 0;
+  padding: 24px 0; /*hw04*/
 }
 
 .header-nav .link {
@@ -181,7 +174,7 @@ img {
 
 .header-address-list {
   display: flex;
-  gap: 40px;
+  gap: 40px; /*hw04*/
 }
 
 .header-adress-item {
@@ -200,37 +193,38 @@ img {
 /*===========Hero============*/
 
 .hero {
-  background: #2e2f42;
-  color: #fff;
-  /*text-align: center;*/
-  padding-top: 188px;
-  padding-bottom: 188px;
+  background-color: #2e2f42;
+  padding: 188px 0; /*hw04*/
 }
 
 .hero-title {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
+  text-align: center;
   letter-spacing: 0.02em;
-  max-width: 496px;
-  /*margin: auto;*/
+  color: #ffffff;
+
+  max-width: 496px; /*hw04*/
+
   padding-bottom: 48px;
 }
 
 .hero-btn {
   display: block;
   min-width: 169px;
-  height: 56px;
+  height: 56px; /*hw04*/
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #ffffff;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background: #4d5ae5;
+  color: #ffffff;
+
+  background-color: #4d5ae5;
   border-radius: 4px;
-  /*padding: 16px 32px;*/
-  border: none;
+  border: none; /*hw04*/
 }
 
 .hero-btn:hover,
@@ -242,16 +236,33 @@ img {
 /*===========Feature=========*/
 
 .feature {
-  padding: 120px 0;
+  padding: 120px 0; /*hw04*/
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; /*hw03*/
 }
 
 .feature-list {
   display: flex;
-  gap: 24px;
+  gap: 24px; /*hw04*/
 }
 
 .feature-item {
-  width: calc((100% - 3 * 24px) / 4);
+  width: calc((100% - 3 * 24px) / 4); /*hw04*/
+}
+
+.feature .subtitle {
+  margin-bottom: 8px; /*hw04*/
 }
 
 /*===========================*/
@@ -259,7 +270,8 @@ img {
 /*==============Team=========*/
 
 .team {
-  background: #f4f4fd;
+  background-color: #f4f4fd;
+
   padding: 120px 0;
 }
 
@@ -325,8 +337,9 @@ img {
 
 /*============Footer=========*/
 .footer {
-  background: #2e2f42;
-  padding: 100px 0;
+  background-color: #2e2f42;
+
+  padding: 100px 0; /*hw03*/
 }
 
 .footer .container {
@@ -336,11 +349,11 @@ img {
 }
 
 .footer .logo {
-  display: inline-block;
+  display: inline-block; /*hw03*/
 }
 
 .footer a {
-  margin-bottom: 16px;
+  margin-bottom: 16px; /*hw03*/
 }
 
 .footer span {
@@ -352,8 +365,8 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  padding-top: 16px;
-  max-width: 264px;
+
+  max-width: 264px; /*hw03*/
 }
 
 /*===========================*/
